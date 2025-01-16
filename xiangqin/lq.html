@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CCN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>罗棋</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        .header {
+            background-color: #00BFFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-image {
+            max-width: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .profile-header {
+            text-align: center;
+        }
+        .profile-info {
+            margin-top: 20px;
+        }
+        .profile-info h2 {
+            color: #ff8c00;
+        }
+        .profile-info p {
+            line-height: 1.6;
+        }
+        .contact-form {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #e07b00;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>个人详细介绍</h1>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="container">
+        <div class="profile-header">
+            <img src="https://sxh8.github.io/blog/img/lq.jpg" alt="个人照片" class="profile-image">
+            <h2>罗棋</h2>
+            <p>年龄：20岁 | 身高：180cm | 职业：计算机网络工程师</p>
+        </div>
+
+        <div class="profile-info">
+            <h2>个人简介</h2>
+            <p>大家好，我是罗棋，来自安徽。性格开朗、热爱生活，喜欢旅游、运动和阅读。我平时工作较忙，但空闲时间会去健身、做饭，也喜欢和朋友聚会。希望能遇到一个有共同话题、互相理解、真心相待的伴侣。</p>
+            <p>我理想中的另一半是：热爱生活、乐观开朗、善解人意，能一起分享生活中的点滴，共同成长。</p>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+            <h2>如果你觉得我们合适，请联系我：</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="你的名字" required><br>
+                <input type="email" name="email" placeholder="你的邮箱" required><br>
+                <textarea name="message" placeholder="留言/自我介绍" rows="4" required></textarea><br>
+                <button type="submit">提交联系信息</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        © 2025 罗棋 | 愿所有的缘分都是美好的
+    </footer>
+
+</body>
+</html>
